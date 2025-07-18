@@ -31,7 +31,7 @@ function Landing(){
       <nav className="backdrop-blur-3xl bg-white/10 border border-white/20 shadow-xl text-white px-10 py-4 rounded-2xl w-full max-w-xl mx-auto flex flex-wrap justify-between items-center gap-4 mt-15">
         <div className="flex flex-wrap gap-4 sm:gap-6 justify-center sm:justify-start w-full sm:w-auto">
           {["Home","About","Get Started","Reach Out"].map((label)=>(
-            <button key={label}className="px-4 py-2 rounded-xl bg-white/20 border border-white/30 backdrop-blur-md hover:bg-white/30 transition shadow" onClick={()=>{if(label==='About')window.location.href='http://localhost:5173/#/try';if (label==="Get Started"){if (isSignedIn) {window.location.href = "http://localhost:5173/#/get";} else {window.location.href ="https://national-dane-76.accounts.dev/sign-in?redirect_url=http://localhost:5173/#/get";}};if(label==='Reach Out')window.location.href='http://localhost:5173/#/contact'}}>{label}</button>))}
+            <button key={label}className="px-4 py-2 rounded-xl bg-white/20 border border-white/30 backdrop-blur-md hover:bg-white/30 transition shadow" onClick={()=>{if(label==='About')window.location.href='https://ev-route-finder.vercel.app/#/try';if (label==="Get Started"){if (isSignedIn) {window.location.href = "https://ev-route-finder.vercel.app/#/get";} else {window.location.href ="https://national-dane-76.accounts.dev/sign-in?redirect_url=https://ev-route-finder.vercel.app/#/get";}};if(label==='Reach Out')window.location.href='https://ev-route-finder.vercel.app/#/contact'}}>{label}</button>))}
         </div>
       </nav>
       <Parallax pages={2} className="overflow-y-scroll scrollbar-hidden">
