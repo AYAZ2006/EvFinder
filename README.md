@@ -49,12 +49,24 @@ A fully responsive web app to find the best EV charging routes with turn-by-turn
     ```
 
 2. **Set Up Environment Variables**
+    Create a `.env` file in the root folder and add your TomTom key:
     ```env
     VITE_TOMTOM_API_KEY=your_tomtom_api_key
     ```
 
-2. **Frontend Setup (React)**
+3. **Install Dependencies and Start App**
     ```bash
     npm install
     npm start
     ```
+
+---
+
+## 🚀 Future Improvements
+
+- Backend support for persistent authentication and storage  
+- Push notifications for route alerts and charge status  
+- Integration with EV manufacturer APIs  
+- Voice-guided navigation  
+- Multilingual UI support  
+- EV compatibility filtering for stations
